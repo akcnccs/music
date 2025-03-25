@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-image: url(https://image.made-in-china.com/2f0j00HsDirSFhMOkq/Mobile-Phone-Aluminum-Alloy-Earbuds-Headphones-Earphones-HD-Sound-Deep-Bass-Compatible-All-3-5mm-Devices-MP3-MP4-Radio.webp);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .nav li {
+            float: right;
+            list-style: none;
+        }
+        
+        .nav a {
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1rem;
+            font-weight: 550;
+            display: block;
+            padding: 5px 35px;
+            color: rgb(150, 144, 144);
+            text-decoration: none;
+        }
+
+
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 45%;
+        }
+
+
+        .left-col {
+            margin-left: 11%;
+        }
+
+        .left-col h1 {
+            font-size: 50px;
+            color: rgb(222, 243, 30);
+        }
+
+        .right-col {
+            float: right;
+            margin-right: 10%;
+            margin-top: -5%;
+            display: flex;
+            align-items: center;
+        }
+
+        .right-col p {
+            font-size: 21px;
+            color: rgb(252, 243, 117);
+            font-weight: 650;
+            margin-right: 20px;
+        }
+                
+        #icon {
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <ul class="nav">
+            
+            <li><a href="https//akc.nccs@gmail.com">CONTACT</a></li>
+            
+            <li><a href="https://onepagelove.com/about">ABOUT</a></li>
+            
+            <li><a href="https://onepagelove.com/inspiration">ARTISTS</a></li>
+            
+            <li><a href="https://music.youtube.com/">MUSIC</a></li>
+            
+            <li><a href="https://pagalnew.com/songs/taaka-taaki-pintu-ki-pappi.html">DURABLE</a></li>
+
+            <li><a href="http://127.0.0.1:5500/musicq/m.html">HOME</a></li>
+       
+        </ul>
+
+    </div>
+
+    <div class="content">
+        <div class="left-col">
+            <h1>MP3 PLAYER <br>3D Bass Music</h1>
+        </div>
+
+        <div class="right-col">
+
+            <p>Click Here To Listen</p>
+
+            <img src="media/play.png" id="icon">
+        </div>
+    </div>
+
+    <audio id="mysound">
+
+        <source src="/play/Rooh Yo Yo Honey Singh 128 Kbps.mp3" type="audio/mp3">
+
+    </audio>
+
+    <script>
+        let mysound = document.getElementById("mysound");
+        let icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            if (mysound.paused) {
+
+                mysound.play();
+                icon.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210402235545/Pause.png";
+            } else {
+                mysound.pause();
+                icon.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210402235520/play.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
